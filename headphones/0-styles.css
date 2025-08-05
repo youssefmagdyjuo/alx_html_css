@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+body{
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+:root{
+    --primary-color: #FF6565;
+    --secondary-color: #071629;
+    --text-color: #fff;
+}
+a{
+        color: var(--text-color);
+}
+p{
+    line-height: 26px;
+    text-align: center;
+}
+h1{
+    
+}
+.logo{
+        width: 12rem;
+}
+div>img{
+    height: auto;
+    object-fit: cover;
+
+}
+header{
+    background-image: url('./images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    
+}
+
+.header_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15rem;
+
+}
+.bar{
+    display: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+    color: var(--text-color);
+}
+.header_content{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    padding: 2rem;
+}
+.header_content .header_text_top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.header_content .header_text_top>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.headerBtn{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 1.2rem;
+    cursor: pointer;
+}
+/* ==================================== SECOND SECTION =================================== */
+.secondSection_container{
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 2rem;
+    color: var(--secondary-color);
+    /* height: 20rem; */
+    padding: 2rem;
+    margin: 4rem auto;
+}
+.secondSection_container>p{
+    width : 60%;
+    place-self: center;
+}
+.secondSection_container>ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.secondSection_container>ul>li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+.secondSection_container div>img{
+    /* width: 5rem; */
+}
+/* ==================================== THIRD SECTION =================================== */
+.thirdSection{
+    background-image: url('./images/headphones_hero_2.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thirdSection_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+    color: var(--text-color);
+        padding: 2rem;
+    margin-top: 5rem ;
+}
+.thirdSection_container>p{
+    width: 60%;
+    place-self: center;
+}
+.thirdSection_container ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+.thirdSection_container ul li{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.thirdSection_container ul li div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 1;
+    position: absolute;
+    place-self: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10px;
+}
+.thirdSection_container ul li  img{
+    width: 10rem;
+}
+/* ==================================== FORM SECTION =================================== */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    margin: 2rem auto;
+    width: 60%;
+    color: var(--secondary-color);
+}
+form input{
+    padding: 1rem 0;
+    border-bottom: solid 1px #8b8b8b;
+    width: 35%;
+}
+form input:focus{
+    outline: none;
+    border-bottom: solid 1px var(--primary-color);
+}
+form input::placeholder{
+    color: var(--secondary-color);
+    font-weight: bold;
+} form button{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: none;
+}
+/* ==================================== FOOTER SECTION =================================== */
+footer{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 2rem;
+    text-align: center;
+}
+.footerText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+}
+.footerText~p{
+    color: #9b9b9b;
+}
+.footerText ul{
+    display: flex;
+    gap: 20px;
+}
+.footerText ul li {
+    width: 2rem;
+    height: 2rem;
+    color: var(--secondary-color);
+    background-color: var(--text-color);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+/* ========================= MEDIA QUERIES [TABLIT] ========================= */
+@media (max-width: 768px) {
+
+    .header_container{
+        width: 90%;
+    }
+    .header_content{
+        width: 90%;
+        padding: 0;
+    }
+        .header_text_top p ,.secondSection_container>p{
+        width: 70%;
+    }
+    form input{
+    width: 70%;
+}
+}
+/* ========================= MEDIA QUERIES [MOBILE] ========================= */
+@media (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+    .header_content{
+        width: 100%;
+        padding: 1rem;
+        gap: 3rem;
+    }
+    .header_content .header_text_top{
+        gap: 1rem;
+    }
+    .bar{
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+    .secondSection_container>p ,.thirdSection_container>p{
+        width: 100%;
+    }
+    .thirdSection_container ul li div p{
+        font-size: 0.8rem;
+    }
+
+}
